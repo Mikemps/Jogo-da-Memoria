@@ -2,6 +2,7 @@
   --primary-color: #070219;
   --secondary-color: #fec107;
 }
+
 main {
   display: flex;
   flex-direction: column;
@@ -12,6 +13,7 @@ main {
   align-items: center;
   justify-content: center;
   padding: 20px 20px 50px;
+  position: relative; /* Certifique-se de que o contêiner principal seja relativo */
 }
 
 header {
@@ -65,7 +67,7 @@ header {
 }
 
 .reveal-card {
-transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .disabled-card {
@@ -73,8 +75,9 @@ transform: rotateY(180deg);
   opacity: 0.5;
 }
 
-@media screen and (max-width:920px) {
+@media screen and (max-width: 920px) {
   .grid {
     grid-template-columns: repeat(5, 1fr);
   }
 }
+
